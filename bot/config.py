@@ -21,8 +21,8 @@ try:
     BOT_TOKEN = config("BOT_TOKEN", "")
     DEV = 943270135
     OWNER = config("OWNER", "5868426717")
-    ffmpegcode = ["-preset faster -c:v libx265 -s 1080x1980 -x265-params 'bframes=8:psy-rd=1:ref=3:aq-mode=3:aq-strength=0.8:deblock=1,1' -metadata 'title=Encoded By CIDENCODE' -pix_fmt yuv420p -crf 26 -c:a libopus -b:a 32k -c:s copy -map 0 -ac 2 -ab 32k -vbr 2 -level 3.1 -threads 1"]
-    THUMB = config("THUMB", "https://images.pexels.com/photos/461940/pexels-photo-461940.jpeg")
+    ffmpegcode = ["-preset veryfast -c:v libx265 -b:a 64k -crf 38 -map 0 -c:s copy"]
+    THUMB = config("THUMB", "https://static7.depositphotos.com/1009183/713/i/950/depositphotos_7132926-stock-photo-beautiful-tree-in-the-sunset.jpg")
 except Exception as e:
     LOGS.info("Environment vars Missing")
     LOGS.info("something went wrong")
