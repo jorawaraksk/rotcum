@@ -22,7 +22,7 @@ try:
     DEV = 943270135
     OWNER = config("OWNER", "943270135")
     ffmpegcode = ["-preset faster -c:v libx265 -s 1080x1980 -x265-params 'bframes=8:psy-rd=1:ref=3:aq-mode=3:aq-strength=0.8:deblock=1,1' -metadata 'title=Encoded By CIDENCODE' -pix_fmt yuv420p -crf 26 -c:a libopus -b:a 32k -c:s copy -map 0 -ac 2 -ab 32k -vbr 2 -level 3.1 -threads 1"]
-    THUMB = config("https://images.pexels.com/photos/461940/pexels-photo-461940.jpeg")
+    THUMB = config("THUMB", "https://images.pexels.com/photos/461940/pexels-photo-461940.jpeg")
 except Exception as e:
     LOGS.info("Environment vars Missing")
     LOGS.info("something went wrong")
