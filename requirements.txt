@@ -7,3 +7,4 @@ python-decouple
 psutil
 pymediainfo
 tgcrypto
+Flask>=2.0
