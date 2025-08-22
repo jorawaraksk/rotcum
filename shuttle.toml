@@ -1,0 +1,6 @@
+[project]
+name = "rotcum"
+type = "docker"
+
+[docker]
+file = "Dockerfile"
